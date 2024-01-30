@@ -7,8 +7,9 @@ public class ConversorTemperatura {
 	public static void main(String[] args) {
 		Conversion conversion1 = new Conversion();
 		conversion1.setTemperatura(Double.parseDouble(JOptionPane.showInputDialog("Introduzca la temperatura a convertir de ºC a ºF")));
+		System.out.println("La temperatura en ºF es "+conversion1.realizarConversion());
 	}
-class Conversion{
+static class Conversion{
 	private double temperatura;
 	private final double conversion;
 	private final int ajuste;
